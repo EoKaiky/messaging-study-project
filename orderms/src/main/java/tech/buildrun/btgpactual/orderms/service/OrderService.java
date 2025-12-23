@@ -42,5 +42,7 @@ public class OrderService {
         return event.itens().stream()
                 .map(i -> new OrderItem(i.product(), i.quantity(), i.price()))
                 .toList();
+
     }
+
 }
